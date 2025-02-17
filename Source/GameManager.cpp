@@ -71,7 +71,10 @@ namespace GAME
 		}
 
 		bool isPlayer = registry.all_of<Collidable, Player>(otherEntity);
-
+		if (isPlayer && isWall)
+		{
+			std::cout << "Player has collided with a wall!" << std::endl;
+		}
 		if (isEnemy && isPlayer)
 		{
 			auto& health = registry.get<Health>(otherEntity);

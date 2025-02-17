@@ -83,7 +83,16 @@ namespace GAME
 		GAMEPLAY,
 		GAMEOVER
 	};
+	struct Bounds {
+		float minX;
+		float maxX;
+		float minZ;
+		float maxZ;
 
+		Bounds(float minx = 0, float maxx = 0, float minz = 0, float maxz = 0)
+			: minX(minx), maxX(maxx), minZ(minz), maxZ(maxz) {
+		}
+	};
 
 }// namespace GAME
 #endif // !GAME_COMPONENTS_H_

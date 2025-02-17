@@ -107,25 +107,25 @@ namespace GAME {
 
 		GW::MATH::GMatrix::TranslateLocalF(transform, physics.velocity, transform);
 
-		float screenWidth = (*config).at("Screen").at("width").as<float>();
-		float screenHeight = (*config).at("Screen").at("height").as<float>();
+		if (registry.ctx().contains<Bounds>()) {
+			const auto& bounds = registry.ctx().get<Bounds>(); 
 
+			float posX = transform.row4.x; 
+			float posZ = transform.row4.z; 
 
-		float posX = transform.row4.x;
-		float posZ = transform.row4.z;
+			if (posX > bounds.maxX) {
+				transform.row4.x = bounds.minX; 
+			}
+			else if (posX < bounds.minX) {
+				transform.row4.x = bounds.maxX; 
+			}
 
-		if (posX > screenWidth / 2) {
-			transform.row4.x = -screenWidth / 2;
-		}
-		else if (posX < -screenWidth / 2) {
-			transform.row4.x = screenWidth / 2;
-		}
-
-		if (posZ > screenHeight / 2) {
-			transform.row4.z = -screenHeight / 2;
-		}
-		else if (posZ < -screenHeight / 2) {
-			transform.row4.z = screenHeight / 2;
+			if (posZ > bounds.maxZ) {
+				transform.row4.z = bounds.minZ;
+			}
+			else if (posZ < bounds.minZ) {
+				transform.row4.z = bounds.maxZ;
+			}
 		}
 
 
