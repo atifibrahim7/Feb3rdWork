@@ -107,27 +107,22 @@ namespace GAME {
 
 		GW::MATH::GMatrix::TranslateLocalF(transform, physics.velocity, transform);
 
+
+
 		if (registry.ctx().contains<Bounds>()) {
-			const auto& bounds = registry.ctx().get<Bounds>(); 
+			const auto& bounds = registry.ctx().get<Bounds>();
 
-			float posX = transform.row4.x; 
-			float posZ = transform.row4.z; 
+			float posX = transform.row4.x;
+			float posZ = transform.row4.z;
 
-			if (posX > bounds.maxX) {
-				transform.row4.x = bounds.minX; 
-			}
-			else if (posX < bounds.minX) {
-				transform.row4.x = bounds.maxX; 
-			}
+			//  (left/right walls)
+			if (posX > bounds.maxX) transform.row4.x = bounds.minX;
+			else if (posX < bounds.minX) transform.row4.x = bounds.maxX;
 
-			if (posZ > bounds.maxZ) {
-				transform.row4.z = bounds.minZ;
-			}
-			else if (posZ < bounds.minZ) {
-				transform.row4.z = bounds.maxZ;
-			}
+			// (top/bottom walls)
+			if (posZ > bounds.maxZ) transform.row4.z = bounds.minZ;
+			else if (posZ < bounds.minZ) transform.row4.z = bounds.maxZ;
 		}
-
 
 
 		GW::MATH::GMATRIXF rotationMatrix;

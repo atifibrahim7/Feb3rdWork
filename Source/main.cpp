@@ -27,7 +27,6 @@ T Max(T a, T b) {
 	return (a > b) ? a : b;
 }
 
-
 void CalculatePlayAreaBounds(entt::registry& registry) {
 	auto view = registry.view<GAME::Obstacle,GAME:: Transform, DRAW::MeshCollection>();
 	float minX = FLT_MAX, maxX = -FLT_MAX;
@@ -38,31 +37,35 @@ void CalculatePlayAreaBounds(entt::registry& registry) {
 		auto& meshes = view.get<DRAW::MeshCollection>(entity);
 
 		GW::MATH::GOBBF obb = meshes.boundingBox;
-		GW::MATH::GVECTORF scale;
-		GW::MATH::GMatrix::GetScaleF(transform.transform, scale);
+		GW::MATH::GMATRIXF worldMatrix = transform.transform;
 
-		// Scale the OBB extents
-		obb.extent.x *= scale.x;
-		obb.extent.y *= scale.y;
-		obb.extent.z *= scale.z;
+		std::array<GW::MATH::GVECTORF, 8> corners;
+		const float signs[] = { -1, 1 };
+		for (int i = 0; i < 8; ++i) {
+			GW::MATH::GVECTORF extent = {
+				obb.extent.x * signs[i % 2],
+				obb.extent.y * signs[(i / 2) % 2],
+				obb.extent.z * signs[(i / 4) % 2]
+			};
+			GW::MATH::GVector::AddVectorF(obb.center, extent, corners[i]);
+		}
 
-		// Transform OBB center to world space
-		GW::MATH::GVECTORF worldCenter;
-		GW::MATH::GMatrix::VectorXMatrixF(transform.transform, obb.center, worldCenter);
-
-		// Calculate world space min and max (assuming axis-aligned walls)
-		float wallMinX = worldCenter.x - obb.extent.x;
-		float wallMaxX = worldCenter.x + obb.extent.x;
-		float wallMinZ = worldCenter.z - obb.extent.z;
-		float wallMaxZ = worldCenter.z + obb.extent.z;
-
-		minX = Min(minX, wallMinX);
-		maxX = Max(maxX, wallMaxX);
-		minZ = Min(minZ, wallMinZ);
-		maxZ = Max(maxZ, wallMaxZ);
+		for (auto& corner : corners) {
+			GW::MATH::GMatrix::VectorXMatrixF(worldMatrix, corner, corner);
+			minX = Min(minX, corner.x);
+			maxX = Max(maxX, corner.x);
+			minZ = Min(minZ, corner.z);
+			maxZ = Max(maxZ, corner.z);
+		}
 	}
 
-	registry.ctx().emplace<GAME::Bounds>(minX, maxX, minZ, maxZ);
+	const float margin = 13.5f; 
+	registry.ctx().emplace<GAME::Bounds>(
+		minX + margin,
+		maxX - margin,
+		minZ + margin,
+		maxZ - margin
+	);
 }
 // Architecture is based on components/entities pushing updates to other components/entities (via "patch" function)
 int main()
