@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{950CAA25-F11C-3303-A237-FE90FA541A61}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>PPV</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">PPV.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">PPV</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">PPV.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">PPV</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">PPV.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">PPV</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">PPV.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">PPV</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Apps\Vulkan sdk\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/PPV.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;UNICODE;_UNICODE;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;UNICODE;_UNICODE;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Apps\Vulkan sdk\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Apps\Vulkan sdk\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/Apps/Vulkan sdk/Lib;D:/Apps/Vulkan sdk/Lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/Debug/PPV.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/Debug/PPV.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Apps\Vulkan sdk\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/PPV.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Apps\Vulkan sdk\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Apps\Vulkan sdk\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/Apps/Vulkan sdk/Lib;D:/Apps/Vulkan sdk/Lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/Release/PPV.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/Release/PPV.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Apps\Vulkan sdk\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/MinSizeRel/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/PPV.dir/MinSizeRel/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Apps\Vulkan sdk\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Apps\Vulkan sdk\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/Apps/Vulkan sdk/Lib;D:/Apps/Vulkan sdk/Lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/MinSizeRel/PPV.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/MinSizeRel/PPV.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Apps\Vulkan sdk\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/PPV.dir/RelWithDebInfo/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;UNICODE;_UNICODE;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Apps\Vulkan sdk\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Apps\Vulkan sdk\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/Apps/Vulkan sdk/Lib;D:/Apps/Vulkan sdk/Lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/RelWithDebInfo/PPV.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/RelWithDebInfo/PPV.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Cmake\bin\cmake.exe "-SD:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate" "-BD:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build" --check-stamp-file "D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Cmake\share\cmake-3.31\Modules\CMakeCCompiler.cmake.in;D:\Cmake\share\cmake-3.31\Modules\CMakeCCompilerABI.c;D:\Cmake\share\cmake-3.31\Modules\CMakeCInformation.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeCXXCompiler.cmake.in;D:\Cmake\share\cmake-3.31\Modules\CMakeCXXCompilerABI.cpp;D:\Cmake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeCompilerIdDetection.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeDetermineCCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeDetermineCXXCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeDetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeDetermineCompilerABI.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeDetermineCompilerId.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeDetermineCompilerSupport.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeDetermineRCCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeDetermineSystem.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeFindBinUtils.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeParseLibraryArchitecture.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeRCCompiler.cmake.in;D:\Cmake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeSystem.cmake.in;D:\Cmake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeTestCCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeTestCXXCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeTestCompilerCommon.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeTestRCCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\CrayClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\LCC-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\OrangeC-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\TIClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Tasking-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\CompilerId\VS-10.vcxproj.in;D:\Cmake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;D:\Cmake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\Cmake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\Cmake\share\cmake-3.31\Modules\Internal\CMakeDetermineLinkerId.cmake;D:\Cmake\share\cmake-3.31\Modules\Internal\FeatureTesting.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\Windows-Determine-CXX.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\Windows.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\CMakeFiles\3.31.5\CMakeCCompiler.cmake;D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\CMakeFiles\3.31.5\CMakeCXXCompiler.cmake;D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\CMakeFiles\3.31.5\CMakeRCCompiler.cmake;D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\CMakeFiles\3.31.5\CMakeSystem.cmake;D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Cmake\bin\cmake.exe "-SD:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate" "-BD:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build" --check-stamp-file "D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Cmake\share\cmake-3.31\Modules\CMakeCCompiler.cmake.in;D:\Cmake\share\cmake-3.31\Modules\CMakeCCompilerABI.c;D:\Cmake\share\cmake-3.31\Modules\CMakeCInformation.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeCXXCompiler.cmake.in;D:\Cmake\share\cmake-3.31\Modules\CMakeCXXCompilerABI.cpp;D:\Cmake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeCompilerIdDetection.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeDetermineCCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeDetermineCXXCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeDetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeDetermineCompilerABI.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeDetermineCompilerId.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeDetermineCompilerSupport.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeDetermineRCCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeDetermineSystem.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeFindBinUtils.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeParseLibraryArchitecture.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeRCCompiler.cmake.in;D:\Cmake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeSystem.cmake.in;D:\Cmake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeTestCCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeTestCXXCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeTestCompilerCommon.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeTestRCCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\CrayClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\LCC-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\OrangeC-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\TIClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Tasking-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\CompilerId\VS-10.vcxproj.in;D:\Cmake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;D:\Cmake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\Cmake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\Cmake\share\cmake-3.31\Modules\Internal\CMakeDetermineLinkerId.cmake;D:\Cmake\share\cmake-3.31\Modules\Internal\FeatureTesting.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\Windows-Determine-CXX.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\Windows.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\CMakeFiles\3.31.5\CMakeCCompiler.cmake;D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\CMakeFiles\3.31.5\CMakeCXXCompiler.cmake;D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\CMakeFiles\3.31.5\CMakeRCCompiler.cmake;D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\CMakeFiles\3.31.5\CMakeSystem.cmake;D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Cmake\bin\cmake.exe "-SD:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate" "-BD:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build" --check-stamp-file "D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Cmake\share\cmake-3.31\Modules\CMakeCCompiler.cmake.in;D:\Cmake\share\cmake-3.31\Modules\CMakeCCompilerABI.c;D:\Cmake\share\cmake-3.31\Modules\CMakeCInformation.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeCXXCompiler.cmake.in;D:\Cmake\share\cmake-3.31\Modules\CMakeCXXCompilerABI.cpp;D:\Cmake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeCompilerIdDetection.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeDetermineCCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeDetermineCXXCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeDetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeDetermineCompilerABI.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeDetermineCompilerId.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeDetermineCompilerSupport.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeDetermineRCCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeDetermineSystem.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeFindBinUtils.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeParseLibraryArchitecture.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeRCCompiler.cmake.in;D:\Cmake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeSystem.cmake.in;D:\Cmake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeTestCCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeTestCXXCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeTestCompilerCommon.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeTestRCCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\CrayClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\LCC-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\OrangeC-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\TIClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Tasking-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\CompilerId\VS-10.vcxproj.in;D:\Cmake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;D:\Cmake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\Cmake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\Cmake\share\cmake-3.31\Modules\Internal\CMakeDetermineLinkerId.cmake;D:\Cmake\share\cmake-3.31\Modules\Internal\FeatureTesting.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\Windows-Determine-CXX.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\Windows.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\CMakeFiles\3.31.5\CMakeCCompiler.cmake;D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\CMakeFiles\3.31.5\CMakeCXXCompiler.cmake;D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\CMakeFiles\3.31.5\CMakeRCCompiler.cmake;D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\CMakeFiles\3.31.5\CMakeSystem.cmake;D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Cmake\bin\cmake.exe "-SD:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate" "-BD:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build" --check-stamp-file "D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Cmake\share\cmake-3.31\Modules\CMakeCCompiler.cmake.in;D:\Cmake\share\cmake-3.31\Modules\CMakeCCompilerABI.c;D:\Cmake\share\cmake-3.31\Modules\CMakeCInformation.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeCXXCompiler.cmake.in;D:\Cmake\share\cmake-3.31\Modules\CMakeCXXCompilerABI.cpp;D:\Cmake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeCompilerIdDetection.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeDetermineCCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeDetermineCXXCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeDetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeDetermineCompilerABI.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeDetermineCompilerId.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeDetermineCompilerSupport.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeDetermineRCCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeDetermineSystem.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeFindBinUtils.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeParseImplicitIncludeInfo.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeParseImplicitLinkInfo.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeParseLibraryArchitecture.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeRCCompiler.cmake.in;D:\Cmake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeSystem.cmake.in;D:\Cmake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeTestCCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeTestCXXCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeTestCompilerCommon.cmake;D:\Cmake\share\cmake-3.31\Modules\CMakeTestRCCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\ADSP-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\ARMCC-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\ARMClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\AppleClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Borland-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Cray-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\CrayClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\GHS-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\GNU-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\HP-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\IAR-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Intel-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\LCC-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\MSVC-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\NVHPC-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\OrangeC-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\PGI-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\PathScale-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\SCO-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\TI-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\TIClang-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Tasking-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\Watcom-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\XL-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\zOS-C-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;D:\Cmake\share\cmake-3.31\Modules\CompilerId\VS-10.vcxproj.in;D:\Cmake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;D:\Cmake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\Cmake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\Cmake\share\cmake-3.31\Modules\Internal\CMakeDetermineLinkerId.cmake;D:\Cmake\share\cmake-3.31\Modules\Internal\FeatureTesting.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\Windows-Determine-CXX.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\Windows.cmake;D:\Cmake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\CMakeFiles\3.31.5\CMakeCCompiler.cmake;D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\CMakeFiles\3.31.5\CMakeCXXCompiler.cmake;D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\CMakeFiles\3.31.5\CMakeRCCompiler.cmake;D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\CMakeFiles\3.31.5\CMakeSystem.cmake;D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\CMakeFiles\PPV.dir\cmake_pch.cxx">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/PPV.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/PPV.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/MinSizeRel/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/PPV.dir/MinSizeRel/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/PPV.dir/RelWithDebInfo/cmake_pch.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <None Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Shaders\LevelPixel.hlsl">
+      <EntryPointName>main</EntryPointName>
+      <ShaderType>Vertex</ShaderType>
+      <ShaderModel>5.1</ShaderModel>
+    </None>
+    <None Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Shaders\LevelVertex.hlsl">
+      <EntryPointName>main</EntryPointName>
+      <ShaderType>Vertex</ShaderType>
+      <ShaderModel>5.1</ShaderModel>
+    </None>
+    <None Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Shaders\OverlayFragment.hlsl">
+      <EntryPointName>main</EntryPointName>
+      <ShaderType>Vertex</ShaderType>
+      <ShaderModel>5.1</ShaderModel>
+    </None>
+    <None Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Shaders\OverlayVertex.hlsl">
+      <EntryPointName>main</EntryPointName>
+      <ShaderType>Vertex</ShaderType>
+      <ShaderModel>5.1</ShaderModel>
+    </None>
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\APP\Window.hpp" />
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\BLIT_Font.h" />
+    <ClCompile Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\CCL.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\CCL.h" />
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\DRAW\DrawComponents.h" />
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\DRAW\Utility\FileIntoString.h" />
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\DRAW\Utility\h2bParser.h" />
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\DRAW\Utility\load_data_oriented.h" />
+    <ClCompile Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\DRAW\VulkanBuffers.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\DRAW\VulkanRenderer.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\FileIntoString.h" />
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\Font.h" />
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\GAME\GameComponents.h" />
+    <ClCompile Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\GameManager.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\LevelCompontents.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\Overlay.h" />
+    <ClCompile Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\Player.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\UI.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\UTIL\GameConfig.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\UTIL\GameConfig.h" />
+    <ClCompile Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\UTIL\Utilities.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\UTIL\Utilities.h" />
+    <ClCompile Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\main.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\precompiled.h" />
+    <None Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\defaults.ini">
+    </None>
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\entt-3.13.1\single_include\entt\entt.hpp" />
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\gateware-main\Gateware.h" />
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\inifile-cpp-master\include\inicpp.h" />
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\CMakeFiles\PPV.dir\Debug\cmake_pch.hxx" />
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\CMakeFiles\PPV.dir\Release\cmake_pch.hxx" />
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\CMakeFiles\PPV.dir\MinSizeRel\cmake_pch.hxx" />
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\CMakeFiles\PPV.dir\RelWithDebInfo\cmake_pch.hxx" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\ZERO_CHECK.vcxproj">
+      <Project>{A28A9557-9EB4-331F-AC85-B78578AC11D9}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

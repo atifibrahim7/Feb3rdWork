@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\CMakeFiles\PPV.dir\cmake_pch.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\CCL.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\DRAW\VulkanBuffers.cpp">
+      <Filter>Source\DRAW</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\DRAW\VulkanRenderer.cpp">
+      <Filter>Source\DRAW</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\GameManager.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\LevelCompontents.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\Player.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\UI.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\UTIL\GameConfig.cpp">
+      <Filter>Source\UTIL</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\UTIL\Utilities.cpp">
+      <Filter>Source\UTIL</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\APP\Window.hpp">
+      <Filter>Source\APP</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\BLIT_Font.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\CCL.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\DRAW\DrawComponents.h">
+      <Filter>Source\DRAW</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\DRAW\Utility\FileIntoString.h">
+      <Filter>Source\DRAW\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\DRAW\Utility\h2bParser.h">
+      <Filter>Source\DRAW\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\DRAW\Utility\load_data_oriented.h">
+      <Filter>Source\DRAW\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\FileIntoString.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\Font.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\GAME\GameComponents.h">
+      <Filter>Source\GAME</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\Overlay.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\UTIL\GameConfig.h">
+      <Filter>Source\UTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\UTIL\Utilities.h">
+      <Filter>Source\UTIL</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Source\precompiled.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\entt-3.13.1\single_include\entt\entt.hpp">
+      <Filter>entt-3.13.1\single_include\entt</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\gateware-main\Gateware.h">
+      <Filter>gateware-main</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\inifile-cpp-master\include\inicpp.h">
+      <Filter>inifile-cpp-master\include</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\CMakeFiles\PPV.dir\Debug\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\CMakeFiles\PPV.dir\Release\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\CMakeFiles\PPV.dir\MinSizeRel\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\build\CMakeFiles\PPV.dir\RelWithDebInfo\cmake_pch.hxx">
+      <Filter>Precompile Header File</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Shaders\LevelPixel.hlsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Shaders\LevelVertex.hlsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Shaders\OverlayFragment.hlsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\Shaders\OverlayVertex.hlsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="D:\fiverr\Feburary Work 2025\updatedfolder_2\updatedfolder_2\asteroidsproject\ProjectTemplate\defaults.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Precompile Header File">
+      <UniqueIdentifier>{40C31BAA-952D-3CB8-830F-B7C6843D1568}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{4D6B044C-7326-3582-9E39-919C2BD71301}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{73AD4D1A-D61B-3E94-835F-1C345CFFA32F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{D3064F5F-4140-370C-BCC8-99F07CACD1B8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\APP">
+      <UniqueIdentifier>{723963E5-42AF-3B83-8D27-47653497C09F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\DRAW">
+      <UniqueIdentifier>{939CD0E5-3B35-36B1-A7C0-14935053A1B0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\DRAW\Utility">
+      <UniqueIdentifier>{8DA92BAE-09F7-3F42-B214-B2077DA3A5F9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\GAME">
+      <UniqueIdentifier>{BF687127-6872-310F-B7CE-520FED5AE58D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\UTIL">
+      <UniqueIdentifier>{C8A5811C-DDAF-3574-AD37-E8B78006E8B3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="entt-3.13.1">
+      <UniqueIdentifier>{7B5D3B19-D2A0-36A3-8062-5BA5106C1F55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="entt-3.13.1\single_include">
+      <UniqueIdentifier>{C920AD71-825B-3197-B7AC-B66E4C93C877}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="entt-3.13.1\single_include\entt">
+      <UniqueIdentifier>{9547C155-DA99-36AC-B4BC-7356976928A0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gateware-main">
+      <UniqueIdentifier>{F667AD9E-3D75-3A81-8143-73A0113E6EEA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inifile-cpp-master">
+      <UniqueIdentifier>{8640333D-50E4-3BB9-9B1C-CA194E332AAB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inifile-cpp-master\include">
+      <UniqueIdentifier>{AB9C8FB2-773C-3082-ABC1-D35517DF7F7E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
