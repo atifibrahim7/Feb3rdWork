@@ -1,3 +1,0 @@
-D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/PPV.dir
-D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/ALL_BUILD.dir
-D:/fiverr/Feburary Work 2025/updatedfolder_2/updatedfolder_2/asteroidsproject/ProjectTemplate/build/CMakeFiles/ZERO_CHECK.dir
